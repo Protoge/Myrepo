@@ -1,0 +1,232 @@
+.clearfix {
+  content:"";
+  display:table;
+  clear:both
+} 
+
+* {
+  box-sizing:border-box;
+  font-size:1em;
+  color:white
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  padding:0;
+  margin:0;
+  background-image:url(https://cdn.glitch.com/8b409531-9fcd-41b2-88b6-b66b38ccba5e%2Fcityscape.png?1543964466368);
+  background-size:cover;
+  background-repeat:no-repeat;
+  
+}
+
+.wrapper {
+  width:80%;
+  margin:0 auto;
+  background-color:rgba(0,0,0, .6)  ;
+  
+}
+
+h1 {
+  font-size:1.2rem;
+  
+}
+
+.wrapper h1{
+  margin:0;
+}
+
+
+
+.wrapper {
+  position:relative;
+  transition:all .25s
+}
+
+.logo {
+  background-color:rgba(0,0,0,0.4);
+  text-align:center;
+  width:100%;
+  margin:0 auto
+}
+
+.logopix {
+  max-width:65%;
+  margin:0 auto;
+  border-radius:10px 10px;
+  margin-top:20px;
+  border:3px solid white;
+  margin-bottom:20px;
+  
+}
+
+.col-logo {
+  animation:fadelogo 1s
+}
+
+@keyframes fadelogo{
+  from{
+    opacity:0
+  }
+  
+  to {
+    opacity:1
+  }
+}
+
+
+
+.code-love {
+  padding:10px;
+  line-height:35px;
+  margin-bottom:0;
+  font-weight:700
+}
+
+hr {
+  color:rgba(0,0,0,.5)
+}
+
+.logopix:hover {
+  cursor:zoom-in
+}
+
+.wrapper {
+  display:flex;
+  flex-direction:column;
+  min-height:100vh
+}
+
+.logo {
+  flex:1
+}
+
+/* nav menu */
+
+.nav-div {
+  background-color:rgba(0,0,0,.7);
+  z-index:1;
+  position:fixed;
+  height:100%;
+  right:0;
+  top:0;
+  overflow:auto;
+  width:0;
+  transition:all .25s
+  
+}
+
+.main-nav,.main-nav li a {
+  list-style:none;
+  text-decoration:none;;
+  padding:10px;
+  text-align:center;
+  color:white;
+  display:block;
+ 
+}
+
+.main-nav-media,.main-nav-media li a {
+  text-decoration:none;
+  list-style:none;
+  color:white;
+  margin:0;
+}
+
+.main-nav li  a{
+  margin-bottom:10px;
+  
+}
+
+.close:hover {
+  cursor:pointer
+}
+
+.bars:hover {
+  cursor:pointer
+}
+
+.nav-div-media {
+  display:none
+}
+/* footer */
+
+.main-footer {
+  background-color:rgba(18, 35, 53,0.6);
+  text-align:center;
+  
+}
+
+.main-footer p {
+  margin-top:0;
+  font-weight:700;
+  padding-top:10px
+}
+
+/* buttons picture change */
+
+#myLeft,#myRight {
+  display:none;
+  border:1px solid transparent;
+  background-color:rgba(0,0,0,0);
+  color:white;
+  margin-right:100px;
+  margin-left:100px;
+  font-size:30px;
+  transition:background-color .25s
+}
+
+#myLeft:hover{
+  cursor:pointer;
+  background-color:rgba(0,0,0,.6)
+}
+
+#myRight:hover {
+  cursor:pointer;
+  background-color:rgba(0,0,0,.6)
+}
+
+/* MEdia queries */
+
+@media (min-width:679px){
+  .nav-div-media {
+    display:block
+  }
+  #bar {
+    display:none
+  }
+  
+  .main-nav-media li,.main-header h1 {
+    margin:5px;
+    
+  }
+  
+  .main-nav-media {
+    padding:0
+  }
+  
+  .code-love {
+    font-weight:600
+  }
+  
+  .logo h1 {
+    margin:10px 0
+  }
+  
+  
+}
+
+@media  (min-width:969px){
+  .logopix {
+    max-width:650px
+  }
+  
+  #myLeft,#myRight {
+  display:inline-block
+}
+  
+  
+  
+  
+}
+
