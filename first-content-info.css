@@ -1,0 +1,12 @@
+.first-content-img {
+  width:100%;
+  max-width:520px;
+  margin-top:20px
+}
+
+.content-wrapper {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  flex-wrap:wrap
+}
