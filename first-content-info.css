@@ -1,7 +1,9 @@
 .first-content-img {
   width:100%;
   max-width:520px;
-  margin-top:20px
+  margin-top:20px;
+  border-radius:10px 10px;
+  max-height:400px
 }
 
 .content-wrapper {
@@ -10,3 +12,56 @@
   justify-content:space-around;
   flex-wrap:wrap
 }
+
+/* target (practice)*/
+
+.content-text:target{
+  display:block;
+}
+
+/* text content */
+
+.content-pos{
+  position:relative;
+  
+}
+
+.content-text {
+  position:absolute;
+  left:50%;
+  top:30%;
+  z-index:1;
+  transform: translate(-50%,50%);
+  background-color:#53bab3;
+  border:3px solid #53bab3;
+  border-radius:10px 10px;
+  padding:25px;
+  display:none;
+  animation: anim .50s;
+}
+/* animation when target is clicked */
+
+@keyframes anim {
+  from{
+    opacity:0;
+    margin-top:-100px;
+  }
+  to {
+    opacity:1;
+    margin-top:0
+  }
+}
+
+/* hover picture text-content-appear */
+
+.content-pos:hover .content-text{
+  display:block;
+  
+}
+
+.content-pos:hover .first-content-img{
+  filter:brightness(20%);
+  transition:all .50s
+}
+
+
