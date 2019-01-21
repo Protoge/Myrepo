@@ -91,3 +91,6 @@ open.addEventListener("click",()=>{
     inter.style.transition = "height .25s"
   }
 })
+
+// later addition
+// $("className").on("addEventHandler",function(event){$(event.target).hide()})
